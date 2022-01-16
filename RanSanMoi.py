@@ -85,11 +85,11 @@ def message_box(subject, content):
 def showScore(choice=1):
     SFont = pygame.font.SysFont('monaco', 32)
     Ssurf = SFont.render("Score  :  {0}".format(score), True, black)
-    Srect = Ssurf.get_rect()
-    if choice == 1:
-        Srect.midtop = (80, 10)
-    else:
-        Srect.midtop = (320, 100)
+    Srect = Ssurf.get_rect().topleft=(10,10)
+#     if choice == 1:
+#         Srect.midtop = (80, 10)
+#     else:
+#         Srect.midtop = (320, 100)
     playSurface.blit(Ssurf, Srect)
 
 while True:
