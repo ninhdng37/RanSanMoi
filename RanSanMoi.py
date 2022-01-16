@@ -75,13 +75,13 @@ def gameOver():
 # Show Score
 def message_box(subject, content):
     root = tk.Tk()
-    root.attributes("-topmost", True)
+#     root.attributes("-topmost", True)
     root.withdraw()
     messagebox.showinfo(subject, content)
-    try:
+#     try:
         root.destroy()
-    except:
-        pass
+#     except:
+#         pass
 def showScore(choice=1):
     SFont = pygame.font.SysFont('monaco', 32)
     Ssurf = SFont.render("Score  :  {0}".format(score), True, black)
